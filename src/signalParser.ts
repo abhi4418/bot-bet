@@ -17,6 +17,21 @@ export function parseSignal(message: string): ParsedSignal | undefined {
   const text = message.trim();
   if (!text) return undefined;
 
+  // Ignore post-match or summary messages
+  const lowerText = text.toLowerCase();
+  const ignorePhrases = [
+    "done & dusted",
+    "done and dusted",
+    "cashed in",
+    "cash in",
+    "won",
+    "loss",
+    "profit"
+  ];
+  if (ignorePhrases.some((phrase) => lowerText.includes(phrase))) {
+    return undefined;
+  }
+
   const cashoutMatch = text.match(/^CASHOUT\s+(.+)$/i);
   if (cashoutMatch) {
     return { type: "cashout", target: cashoutMatch[1].trim() };

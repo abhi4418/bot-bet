@@ -93,6 +93,10 @@ export class UserTelegramClient {
     const me = await this.client.getMe();
     console.log(`[TG] Logged in as ${me.firstName ?? ""} (ID: ${me.id})`);
 
+    // Cache entities so we can resolve numeric IDs
+    console.log("[TG] Fetching dialogs to cache entities...");
+    await this.client.getDialogs();
+
     // Load live events
     await this.refreshEvents();
 
