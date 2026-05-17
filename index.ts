@@ -22,8 +22,19 @@ if (import.meta.main) {
   const { createBettingClient } = await import("./src/bettingClient.ts");
   const { loadConfig } = await import("./src/config.ts");
   const { UserTelegramClient } = await import("./src/userTelegramClient.ts");
+  const { setAuthToken } = await import("./src/authStore.ts");
 
   const config = loadConfig();
+
+  // Seed the in-memory token from .env so the bot works out of the box.
+  // A Telegram `login` command will overwrite this at runtime.
+  if (config.authToken) {
+    setAuthToken(config.authToken);
+    console.log("[AUTH] Token seeded from BETBOT_AUTH_TOKEN env var.");
+  } else {
+    console.warn("[AUTH] No BETBOT_AUTH_TOKEN in env — type 'login' in the update group to authenticate.");
+  }
+
   const client = createBettingClient(config);
   const userTg = new UserTelegramClient(config, client);
 

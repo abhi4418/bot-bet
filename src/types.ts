@@ -108,6 +108,7 @@ export type ActiveBet = {
   side?: BetSide;
   amount?: number;
   oddValue?: number;
+  status?: string;
   raw: unknown;
 };
 

@@ -45,10 +45,11 @@ export function normalizeActiveBetsResponse(data: unknown): ActiveBet[] {
       betId,
       eventId: readString(node, "eventId", "srEventId"),
       marketId: readString(node, "marketId"),
-      outcomeId: readString(node, "outcomeId", "selectionId"),
+      outcomeId: readString(node, "outcomeId", "selectionId", "runnerId"),
       side: readBetSide(node),
       amount: readNumber(node, "amount", "stake"),
       oddValue: readNumber(node, "oddValue", "price", "odds"),
+      status: readString(node, "status", "betStatus", "state"),
       raw: node,
     });
   });

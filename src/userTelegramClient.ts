@@ -14,6 +14,8 @@ import { parseSignal, findMatchingEvent } from "./signalParser.ts";
 import type { MarketOdds, OddsRunner, BetSide } from "./types.ts";
 import type { OddsStream } from "./oddsFeed.ts";
 import { readMarketType, readMarketLimits } from "./betLogic.ts";
+import { loginAndStore, isAuthTokenSet, clearAuthToken } from "./authStore.ts";
+import { getLimitAmount, setLimitAmount } from "./limitStore.ts";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -39,6 +41,19 @@ export class UserTelegramClient {
   private readonly activeStreams = new Map<string, ActiveStream>();
   private readonly processedMsgIds = new Set<number>();
   private readonly autoCashedOutEvents = new Set<string>();
+  /** Tracks users mid-way through the interactive login flow. */
+  private readonly pendingLogin = new Map<number, { step: "username" } | { step: "password"; username: string }>();
+
+  /** Tracks pending manual cashouts awaiting confirmation. */
+  private readonly pendingCashouts = new Map<
+    number,
+    { 
+      event: EventFileRow;
+      odds: MarketOdds;
+      cashout: ReturnType<typeof calculateCashout>;
+      targetText: string;
+    }
+  >();
   private eventsCache: EventFileRow[] = [];
   private stopped = false;
 
@@ -130,11 +145,85 @@ export class UserTelegramClient {
           const message = event.message;
           if (!message?.message) return;
           if (this.isDuplicate(message.id)) return;
+
+          const text = message.message.trim();
+          const senderId = message.senderId ? Number(message.senderId) : 0;
+
+          // --- Login command ---
+          if (text.toLowerCase() === "login") {
+            await this.handleLoginCommand(senderId, "start");
+            return;
+          }
+
+          // --- Logout command ---
+          if (text.toLowerCase() === "logout" || text.toLowerCase() === "/logout") {
+            clearAuthToken();
+            console.log("[AUTH] Logged out. Token cleared from memory.");
+            await this.sendGroupMessage("👋 Logged out successfully. Token cleared from memory.\nType `login` to authenticate again.");
+            return;
+          }
+
+          // --- Help command ---
+          if (text.toLowerCase() === "help" || text.toLowerCase() === "/help") {
+            const helpText = `🤖 **Bot Commands:**
+- \`login\` : Authenticate to the betting server
+- \`logout\` : Clear authentication token
+- \`setlimit <amount>\` : Change the base limit amount (currently ₹${getLimitAmount()})
+- \`help\` : Show this help message
+- \`BACK/LAY <team> <amount>\` : Place a manual bet
+- \`<amount> limit <team>\` : Place a casual signal bet`;
+            await this.sendGroupMessage(helpText);
+            return;
+          }
+
+          // --- Set Limit command ---
+          if (text.toLowerCase().startsWith("setlimit ") || text.toLowerCase().startsWith("/setlimit ")) {
+            const parts = text.split(" ");
+            const amount = Number(parts[1]);
+            if (isNaN(amount) || amount <= 0) {
+              await this.sendGroupMessage("❌ Invalid amount. Usage: `setlimit 500`");
+              return;
+            }
+            setLimitAmount(amount);
+            await this.sendGroupMessage(`✅ Base limit amount updated to ₹${amount}. Signals like "1 limit" will now place a ₹${amount} bet.`);
+            return;
+          }
+
+          // --- Intercept pending cashout confirmation ---
+          if (this.pendingCashouts.has(senderId)) {
+            const reply = text.toLowerCase();
+            if (reply === "yes" || reply === "y") {
+              await this.executePendingCashout(senderId);
+            } else {
+              this.pendingCashouts.delete(senderId);
+              await this.sendGroupMessage("❌ Cashout cancelled.");
+            }
+            return;
+          }
+
+          // --- Intercept pending cashout confirmation ---
+          if (this.pendingCashouts.has(senderId)) {
+            const reply = text.toLowerCase();
+            if (reply === "yes" || reply === "y") {
+              await this.executePendingCashout(senderId);
+            } else {
+              this.pendingCashouts.delete(senderId);
+              await this.sendGroupMessage("❌ Cashout cancelled.");
+            }
+            return;
+          }
+
+          // --- Intercept replies that are part of a pending login flow ---
+          if (this.pendingLogin.has(senderId)) {
+            await this.handleLoginCommand(senderId, text);
+            return;
+          }
+
           // Only process messages that look like signals
-          const parsed = parseSignal(message.message);
+          const parsed = parseSignal(text);
           if (!parsed) return;
-          console.log(`[GROUP] ${message.message}`);
-          await this.handleSignal(message.message, "group");
+          console.log(`[GROUP] ${text}`);
+          await this.handleSignal(text, "group", senderId);
         },
         new NewMessage({ chats: [this.resolveChat(groupId)] }),
       );
@@ -153,15 +242,83 @@ export class UserTelegramClient {
     return false;
   }
 
+  // ── Login Command ────────────────────────────────────────────────────
+
+  /**
+   * Multi-step interactive login handler.
+   * Step flow:  "start" → ask for username
+   *             username reply → ask for password
+   *             password reply → call login API → store token
+   */
+  private async handleLoginCommand(senderId: number, input: string): Promise<void> {
+    const state = this.pendingLogin.get(senderId);
+
+    // ── Step 0: trigger ──────────────────────────────────────────────
+    if (input === "start") {
+      this.pendingLogin.set(senderId, { step: "username" });
+      await this.sendGroupMessage("🔐 *Login*\nPlease reply with your *username*:");
+      return;
+    }
+
+    // ── Step 1: waiting for username ─────────────────────────────────
+    if (state?.step === "username") {
+      const username = input.trim();
+      if (!username) {
+        await this.sendGroupMessage("Username cannot be empty. Please reply with your username:");
+        return;
+      }
+      this.pendingLogin.set(senderId, { step: "password", username });
+      await this.sendGroupMessage(`Got it — username: \`${username}\`\nNow reply with your *password*:`);
+      return;
+    }
+
+    // ── Step 2: waiting for password ─────────────────────────────────
+    if (state?.step === "password") {
+      const password = input.trim();
+      if (!password) {
+        await this.sendGroupMessage("Password cannot be empty. Please reply with your password:");
+        return;
+      }
+
+      this.pendingLogin.delete(senderId);
+      await this.sendGroupMessage("⏳ Logging in...");
+
+      try {
+        const token = await loginAndStore(state.username, password);
+        // Show only first/last 6 chars of the token for confirmation
+        const preview = `${token.slice(0, 6)}...${token.slice(-6)}`;
+        console.log(`[AUTH] Login successful for ${state.username}. Token: ${preview}`);
+        await this.sendGroupMessage(
+          `✅ Login successful!\nToken stored in memory (${preview}).\n\nThe bot will now use this token for all API calls.`,
+        );
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error("[AUTH] Login failed:", msg);
+        await this.sendGroupMessage(`❌ Login failed: ${msg}\n\nType \`login\` to try again.`);
+      }
+      return;
+    }
+
+    // Shouldn't reach here, but clean up just in case
+    this.pendingLogin.delete(senderId);
+  }
+
   // ── Signal Processing ───────────────────────────────────────────────
 
-  private async handleSignal(text: string, source: string): Promise<void> {
+  private async handleSignal(text: string, source: string, senderId = 0): Promise<void> {
     const signal = parseSignal(text);
     if (!signal) return;
 
+    // Bail early if we have no token — avoids hammering the API and getting rate-limited
+    if (!isAuthTokenSet()) {
+      console.warn(`[SIGNAL] Ignoring signal from ${source} — not authenticated. Type 'login' in the update group.`);
+      await this.sendGroupMessage("⚠️ Signal received but bot is not authenticated. Type `login` in this group first.");
+      return;
+    }
+
     try {
       if (signal.type === "cashout") {
-        await this.handleCashout(signal.target);
+        await this.handleCashout(signal.target, false, senderId);
       } else {
         await this.handleBet(signal.side, signal.playerOrTeam, signal.amount);
       }
@@ -286,7 +443,7 @@ export class UserTelegramClient {
     await this.sendGroupMessage(msg);
   }
 
-  private async handleCashout(target: string): Promise<void> {
+  private async handleCashout(target: string, isAuto = false, senderId = 0): Promise<void> {
     // Find matching event
     const event = findMatchingEvent(this.eventsCache, target);
     if (!event) {
@@ -308,8 +465,6 @@ export class UserTelegramClient {
       return;
     }
 
-
-
     // Calculate cashout
     const cashout = calculateCashout(positions, odds, this.config.oddsAdjustment);
     if (!cashout.possible) {
@@ -317,6 +472,41 @@ export class UserTelegramClient {
       return;
     }
 
+    // If this is a manual cashout from a user, ask for confirmation first
+    if (!isAuto && senderId) {
+      this.pendingCashouts.set(senderId, {
+        event,
+        odds,
+        cashout,
+        targetText: target
+      });
+
+      const msg = [
+        `🤔 **Confirm Cashout for ${event.eventName}?**`,
+        `Hedge Bet: ${cashout.side} ${cashout.outcomeDesc} @ ${cashout.oddValue}`,
+        `Stake: ₹${cashout.amount}`,
+        `\n**Projected Final Ledger (both sides):**`,
+        `All outcomes will have an expected P&L of roughly: **₹${cashout.expectedPnl}**`,
+        `\nReply with **yes** to confirm or **no** to cancel.`
+      ];
+      await this.sendGroupMessage(msg.join("\n"));
+      return;
+    }
+
+    // If it's auto-cashout, execute immediately
+    await this.executeCashout(event, odds, cashout);
+  }
+
+  private async executePendingCashout(senderId: number): Promise<void> {
+    const pending = this.pendingCashouts.get(senderId);
+    if (!pending) return;
+    this.pendingCashouts.delete(senderId);
+    
+    await this.sendGroupMessage(`⏳ Executing cashout...`);
+    await this.executeCashout(pending.event, pending.odds, pending.cashout as any);
+  }
+
+  private async executeCashout(event: EventFileRow, odds: MarketOdds, cashout: Exclude<ReturnType<typeof calculateCashout>, { possible: false }>): Promise<void> {
     // Mark as cashed out to avoid auto-cashout double triggering
     this.autoCashedOutEvents.add(event.eventId);
 
@@ -442,7 +632,7 @@ export class UserTelegramClient {
       this.autoCashedOutEvents.add(event.eventId);
       console.log(`[AUTO-CASHOUT] ${event.eventName}: ${runner.outcomeDesc} reached ${runner.back.price}`);
       await this.sendGroupMessage(`⚡ **Auto Cashout Triggered!**\n${runner.outcomeDesc} reached 40p (${runner.back.price}). Cashing out ${event.eventName}...`);
-      await this.handleCashout(event.eventName);
+      await this.handleCashout(event.eventName, true);
     }
   }
 

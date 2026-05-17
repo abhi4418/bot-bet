@@ -1,4 +1,5 @@
 import type { BetSide } from "./types.ts";
+import { getLimitAmount } from "./limitStore.ts";
 
 export type ParsedSignal =
   | { type: "bet"; side: BetSide; playerOrTeam: string; amount?: number }
@@ -34,7 +35,7 @@ export function parseSignal(message: string): ParsedSignal | undefined {
       type: "bet",
       side: "BACK",
       playerOrTeam,
-      amount: multiplier * 300,
+      amount: multiplier * getLimitAmount(),
     };
   }
 
@@ -48,7 +49,7 @@ export function parseSignal(message: string): ParsedSignal | undefined {
     
     let amount = value;
     if (isUnitOrLimit) {
-      amount = value * 300;
+      amount = value * getLimitAmount();
     }
 
     if (amount > 0) {
@@ -65,7 +66,7 @@ export function parseSignal(message: string): ParsedSignal | undefined {
       type: "bet", 
       side: "BACK", 
       playerOrTeam: casualMatch1[3].trim(), 
-      amount: Number(casualMatch1[1]) * 300 
+      amount: Number(casualMatch1[1]) * getLimitAmount() 
     };
   }
   
@@ -74,7 +75,7 @@ export function parseSignal(message: string): ParsedSignal | undefined {
       type: "bet", 
       side: "BACK", 
       playerOrTeam: casualMatch2[1].trim(), 
-      amount: Number(casualMatch2[2]) * 300 
+      amount: Number(casualMatch2[2]) * getLimitAmount() 
     };
   }
 

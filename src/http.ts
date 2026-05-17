@@ -1,5 +1,6 @@
 import axios, { type AxiosRequestConfig, type Method } from "axios";
 import type { BotConfig } from "./config.ts";
+import { getAuthToken } from "./authStore.ts";
 
 export class ApiError extends Error {
   constructor(
@@ -31,13 +32,14 @@ export class HttpClient {
   }
 
   private async request<T>(url: string, init: AxiosRequestConfig): Promise<T> {
-    if (!this.config.authToken) {
-      throw new Error("BETBOT_AUTH_TOKEN is required for API calls.");
+    const authToken = getAuthToken();
+    if (!authToken) {
+      throw new Error("No auth token set. Type 'login' in the Telegram update group to authenticate.");
     }
-    assertTokenNotExpired(this.config.authToken);
+    assertTokenNotExpired(authToken);
 
     const method = normalizeMethod(init.method);
-    const response = await axios.request<unknown>({
+    const requestConfig: AxiosRequestConfig = {
       ...init,
       url,
       method,
@@ -45,7 +47,7 @@ export class HttpClient {
       headers: {
         accept: "application/json",
         "accept-language": this.config.acceptLanguage,
-        authorization: this.config.authToken,
+        authorization: authToken,
         origin: this.config.origin,
         priority: "u=1, i",
         Referer: this.config.referer,
@@ -59,16 +61,40 @@ export class HttpClient {
         "user-agent": this.config.userAgent,
         ...init.headers,
       },
-    });
+    };
 
-    if (response.status < 200 || response.status >= 300) {
-      throw new ApiError(`API request failed with ${response.status} for ${method} ${url}`, response.status, response.data, {
-        method,
-        url,
-      });
+    // Retry with exponential back-off on 429 Too Many Requests
+    const MAX_RETRIES = 3;
+    const BASE_DELAY_MS = 2000;
+
+    let lastStatus = 0;
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      const response = await axios.request<unknown>(requestConfig);
+      lastStatus = response.status;
+
+      if (response.status === 429) {
+        if (attempt < MAX_RETRIES) {
+          const delayMs = BASE_DELAY_MS * Math.pow(2, attempt); // 2s, 4s, 8s
+          console.warn(`[HTTP] 429 Too Many Requests for ${method} ${url} — retrying in ${delayMs / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})`);
+          await new Promise((r) => setTimeout(r, delayMs));
+          continue;
+        }
+        // Exhausted retries
+        throw new ApiError(`API rate-limited (429) after ${MAX_RETRIES} retries for ${method} ${url}`, 429, response.data, { method, url });
+      }
+
+      if (response.status < 200 || response.status >= 300) {
+        throw new ApiError(`API request failed with ${response.status} for ${method} ${url}`, response.status, response.data, {
+          method,
+          url,
+        });
+      }
+
+      return response.data as T;
     }
 
-    return response.data as T;
+    // Should not be reached
+    throw new ApiError(`API request failed with ${lastStatus} for ${method} ${url}`, lastStatus, null, { method, url });
   }
 }
 
@@ -87,7 +113,7 @@ function assertTokenNotExpired(token: string): void {
     return;
   }
 
-  throw new Error(`BETBOT_AUTH_TOKEN expired at ${new Date(expiresAtMs).toISOString()}. Paste a fresh token into .env.`);
+  throw new Error(`Auth token expired at ${new Date(expiresAtMs).toISOString()}. Type 'login' in the Telegram update group to re-authenticate.`);
 }
 
 function decodeJwtPayload(token: string): { exp?: unknown } | undefined {
