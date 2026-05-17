@@ -158,12 +158,12 @@ function assertBetEvent(event: EventSummary | BetEvent, config: BotConfig): BetE
 
   return {
     sportId,
-    seriesId,
-    seriesName,
+    seriesId: seriesId as string,
+    seriesName: seriesName as string,
     eventId: event.eventId,
     eventName: event.eventName,
-    eventDate,
-    marketId,
+    eventDate: eventDate as string,
+    marketId: marketId as string,
     marketName: event.marketName,
     marketType: event.marketType,
   };

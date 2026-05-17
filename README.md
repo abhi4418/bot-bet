@@ -45,24 +45,47 @@ Templates are supported:
 BETBOT_ODDS_SUBSCRIBE_MESSAGES=["[\"CONNECT\\ntoken:Bearer null\\naccept-version:1.1,1.0\\nheart-beat:5000,10000\\n\\n\\u0000\"]","[\"SUBSCRIBE\\nid:sub-0\\ndestination:/topic/rx_bm_update/{eventId}\\n\\n\\u0000\"]"]
 ```
 
+## Telegram Bot
+
+Set these in `.env`:
+
+```env
+TELEGRAM_BOT_TOKEN=replace-with-telegram-bot-token
+TELEGRAM_ALLOWED_CHAT_IDS=123456789
+MAX_PARALLEL_MATCHES=
+```
+
+Leave `MAX_PARALLEL_MATCHES` empty for unlimited active match sessions. If `TELEGRAM_ALLOWED_CHAT_IDS` is empty, every chat can use the bot, so fill it before using live betting.
+
+Run:
+
+```bash
+bun index.ts
+```
+
+Telegram commands:
+
+```text
+/events
+/refresh
+/sessions
+/bet pbks BACK 500
+/stop pbks
+/stopall
+```
+
+Flow:
+
+1. Send `/events`.
+2. Click a match button.
+3. Reply with an alias, for example `pbks`.
+4. Place bets with `/bet pbks BACK 500` or `/bet pbks LAY 500`.
+
+The bot auto-selects the runner whose requested side odds are below `100`, fills outcome/market/odds details from the latest websocket odds, and keeps every selected match session running in parallel.
+
 ## Commands
 
 ```bash
 bun run start
 bun run typecheck
 ```
-
-Running `bun index.ts` fetches events, writes:
-
-- `data/events.json`
-- `data/events.txt`
-
-If `data/selected-event.json` exists, the CLI reuses that match directly. Otherwise it asks for the `eventId` and `seriesId` of the match you want and saves the matched event to:
-
-- `data/selected-event.json`
-
-For a saved running match, the bet prompt only asks for:
-
-- one command in `{SIDE} {AMOUNT}` format, for example `BACK 500`
-
-It then auto-selects the runner whose odds for that side are below `100` and sends the bet using the latest live odds.

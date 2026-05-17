@@ -36,375 +36,375 @@ Available events
    eventDate: 2026-05-17T03:00:00.000+00:00
    marketId: 
    marketName: 
-6. Parsa vs. Dhanusha
-   eventId: sr:match:71350206
-   seriesId: sr:tournament:51494
-   seriesName: Nepal / T20 Madhesh Cricket League
-   eventDate: 2026-05-17T03:15:00.000+00:00
-   marketId: 
-   marketName: 
-7. Paarl Royals SRL vs. Durban Super Giants SRL
+6. Paarl Royals SRL vs. Durban Super Giants SRL
    eventId: sr:match:71501172
    seriesId: sr:tournament:39175
    seriesName: Simulated Reality League / SA T20 League SRL
    eventDate: 2026-05-17T04:00:00.000+00:00
    marketId: 
    marketName: 
-8. Bangladesh v Pakistan
+7. Bangladesh v Pakistan
    eventId: 35602104
    seriesId: 11365612
    seriesName: Test Matches
    eventDate: 2026-05-17T04:00:00.000+00:00
    marketId: 1.258129372
    marketName: 
-9. Band-E-Amir Dragons vs. Mis-E-Ainak Knights
+8. Band-E-Amir Dragons vs. Mis-E-Ainak Knights
    eventId: sr:match:71512894
    seriesId: sr:tournament:41274
    seriesName: Afghanistan / Regional List A Tournament
    eventDate: 2026-05-17T04:30:00.000+00:00
    marketId: 
    marketName: 
-10. Delhi vs. Hyderabad
+9. Delhi vs. Hyderabad
    eventId: vci:match:21807
    seriesId: vci:tournament:34172
    seriesName: Virtual Cricket / Virtual Cricket In-Play
    eventDate: 2026-05-17T04:50:51.000+00:00
    marketId: 
    marketName: 
-11. Trinbago Knight Riders SRL vs. Antigua And Barbuda Falcons SRL
+10. Trinbago Knight Riders SRL vs. Antigua And Barbuda Falcons SRL
    eventId: sr:match:71501048
    seriesId: sr:tournament:36803
    seriesName: Simulated Reality League / Caribbean Premier League SRL
    eventDate: 2026-05-17T05:00:00.000+00:00
    marketId: 
    marketName: 
-12. AUSTRALIA T10 v SOUTH AFRICA T10
-   eventId: 1778846208
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T05:30:00.000+00:00
-   marketId: 
-   marketName: 
-13. Wellington SRL vs. Central Districts SRL
+11. Wellington SRL vs. Central Districts SRL
    eventId: sr:match:71500918
    seriesId: sr:tournament:46519
    seriesName: Simulated Reality League / Super Smash SRL
    eventDate: 2026-05-17T06:00:00.000+00:00
    marketId: 
    marketName: 
-14. BRONSON REED v REY MYSTERIO
-   eventId: 1778948887
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:10:00.000+00:00
-   marketId: 
-   marketName: 
-15. DELHI CAPITALS SO v ROYAL CHALLENGERS BANGALORE SO
-   eventId: 1778938669
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:15:00.000+00:00
-   marketId: 
-   marketName: 
-16. INDIA T10 v PAKISTAN T10
+12. INDIA T10 v PAKISTAN T10
    eventId: 1778846232
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T06:20:00.000+00:00
    marketId: 
    marketName: 
-17. INDIA T10 v NEW ZEALAND T10
+13. INDIA T10 v NEW ZEALAND T10
    eventId: 1778845129
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T06:30:00.000+00:00
    marketId: 
    marketName: 
-18. MELBOURNE RENEGADES SO v ADELAIDE STRIKERS SO
-   eventId: 1778938699
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:30:00.000+00:00
-   marketId: 
-   marketName: 
-19. STEPHANIE MCMAHON v CHELSEA GREEN
-   eventId: 1778948911
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:40:00.000+00:00
-   marketId: 
-   marketName: 
-20. SUNRISERS HYDERABAD SO v PUNJAB KINGS SO
-   eventId: 1778938720
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:45:00.000+00:00
-   marketId: 
-   marketName: 
-21. Sydney Sixers SRL vs. Brisbane Heat SRL
+14. Sydney Sixers SRL vs. Brisbane Heat SRL
    eventId: sr:match:71500848
    seriesId: sr:tournament:33207
    seriesName: Simulated Reality League / Big Bash League SRL
    eventDate: 2026-05-17T07:00:00.000+00:00
    marketId: 
    marketName: 
-22. CHENNAI SUPER KINGS SO v GUJARAT TITANS SO
+15. CHENNAI SUPER KINGS SO v GUJARAT TITANS SO
    eventId: 1778938743
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:00:00.000+00:00
    marketId: 
    marketName: 
-23. NEW ZEALAND T10 v ENGLAND T10
+16. NEW ZEALAND T10 v ENGLAND T10
    eventId: 1778846254
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:10:00.000+00:00
    marketId: 
    marketName: 
-24. CODY RHODES v SHEAMUS
+17. CODY RHODES v SHEAMUS
    eventId: 1778948937
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:10:00.000+00:00
    marketId: 
    marketName: 
-25. WASHINGTON FREEDOM SO v MI NEW YORK SO
+18. WASHINGTON FREEDOM SO v MI NEW YORK SO
    eventId: 1778938767
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:15:00.000+00:00
    marketId: 
    marketName: 
-26. ENGLAND T10 v AUSTRALIA T10
+19. ENGLAND T10 v AUSTRALIA T10
    eventId: 1778845155
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:20:00.000+00:00
    marketId: 
    marketName: 
-27. JOBURG SUPER KINGS SO v PRETORIA CAPITALS SO
+20. JOBURG SUPER KINGS SO v PRETORIA CAPITALS SO
    eventId: 1778938793
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:30:00.000+00:00
    marketId: 
    marketName: 
-28. GOLDBERG v THE ROCK
+21. GOLDBERG v THE ROCK
    eventId: 1778948959
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:40:00.000+00:00
    marketId: 
    marketName: 
-29. ST LUCIA KINGS SO v ST KITTS & NEVIS PATRIOTS SO
+22. ST LUCIA KINGS SO v ST KITTS & NEVIS PATRIOTS SO
    eventId: 1778938815
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T07:45:00.000+00:00
    marketId: 
    marketName: 
-30. WEST INDIES T10 v SOUTH AFRICA T10
+23. WEST INDIES T10 v SOUTH AFRICA T10
    eventId: 1778846277
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:00:00.000+00:00
    marketId: 
    marketName: 
-31. Pakistan SRL vs. Sri Lanka SRL
+24. Pakistan SRL vs. Sri Lanka SRL
    eventId: sr:match:71500728
    seriesId: sr:tournament:36807
    seriesName: Simulated Reality League / T20 International SRL
    eventDate: 2026-05-17T08:00:00.000+00:00
    marketId: 
    marketName: 
-32. KARACHI KINGS SO v QUETTA GLADIATORS SO
+25. KARACHI KINGS SO v QUETTA GLADIATORS SO
    eventId: 1778938840
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:00:00.000+00:00
    marketId: 
    marketName: 
-33. REY FENIX v LA KNIGHT
-   eventId: 1778948983
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:10:00.000+00:00
-   marketId: 
-   marketName: 
-34. PAKISTAN T10 v SOUTH AFRICA T10
+26. PAKISTAN T10 v SOUTH AFRICA T10
    eventId: 1778845179
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:10:00.000+00:00
    marketId: 
    marketName: 
-35. PUNJAB KINGS SO v DELHI CAPITALS SO
+27. REY FENIX v LA KNIGHT
+   eventId: 1778948983
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T08:10:00.000+00:00
+   marketId: 
+   marketName: 
+28. PUNJAB KINGS SO v DELHI CAPITALS SO
    eventId: 1778938866
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:15:00.000+00:00
    marketId: 
    marketName: 
-36. DUBAI CAPITALS SO v GULF GIANTS SO
+29. DUBAI CAPITALS SO v GULF GIANTS SO
    eventId: 1778938894
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:30:00.000+00:00
    marketId: 
    marketName: 
-37. AJ LEE v KELANI JORDAN
+30. AJ LEE v KELANI JORDAN
    eventId: 1778949006
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:40:00.000+00:00
    marketId: 
    marketName: 
-38. DESERT VIPERS SO v SHARJAH WARRIORS SO
+31. DESERT VIPERS SO v SHARJAH WARRIORS SO
    eventId: 1778938918
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:45:00.000+00:00
    marketId: 
    marketName: 
-39. AFGHANISTAN T10 v BANGLADESH T10
+32. AFGHANISTAN T10 v BANGLADESH T10
    eventId: 1778846301
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T08:50:00.000+00:00
    marketId: 
    marketName: 
-40. SOUTHERN BRAVE SO v OVAL INVINCIBLES SO
+33. SOUTHERN BRAVE SO v OVAL INVINCIBLES SO
    eventId: 1778938944
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:00:00.000+00:00
    marketId: 
    marketName: 
-41. Quetta Gladiators SRL vs. Lahore Qalandars SRL
-   eventId: sr:match:71500672
-   seriesId: sr:tournament:36805
-   seriesName: Simulated Reality League / Pakistan Super League SRL
-   eventDate: 2026-05-17T09:00:00.000+00:00
-   marketId: 
-   marketName: 
-42. WEST INDIES T10 v BANGLADESH T10
+34. WEST INDIES T10 v BANGLADESH T10
    eventId: 1778845208
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:00:00.000+00:00
    marketId: 
    marketName: 
-43. DREW MCINTYRE v BROCK LESNAR
+35. Quetta Gladiators SRL vs. Lahore Qalandars SRL
+   eventId: sr:match:71500672
+   seriesId: sr:tournament:36805
+   seriesName: Simulated Reality League / Pakistan Super League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+36. DREW MCINTYRE v BROCK LESNAR
    eventId: 1778949033
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:10:00.000+00:00
    marketId: 
    marketName: 
-44. MI CAPE TOWN SO v DURBAN'S SUPER GIANTS SO
+37. MI CAPE TOWN SO v DURBAN'S SUPER GIANTS SO
    eventId: 1778938973
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:15:00.000+00:00
    marketId: 
    marketName: 
-45. ENGLAND T10 v INDIA T10
+38. ISLAMABAD UNITED SO v LAHORE QALANDARS SO
+   eventId: 1778938998
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 
+   marketName: 
+39. ENGLAND T10 v INDIA T10
    eventId: 1778846325
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:40:00.000+00:00
    marketId: 
    marketName: 
-46. GIOVANNI VINCI v JOHN CENA
+40. GIOVANNI VINCI v JOHN CENA
    eventId: 1778949060
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:40:00.000+00:00
    marketId: 
    marketName: 
-47. TRENT ROCKETS T10 v LONDON SPIRIT T10
+41. GULF GIANTS SO v MI EMIRATES SO
+   eventId: 1778939023
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T09:45:00.000+00:00
+   marketId: 
+   marketName: 
+42. TRENT ROCKETS T10 v LONDON SPIRIT T10
    eventId: 1778845239
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:50:00.000+00:00
    marketId: 
    marketName: 
-48. Kent v Durham
+43. Kent v Durham
    eventId: 35598636
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093218
    marketName: 
-49. Punjab Kings v RC Bengaluru
-   eventId: 35608629
-   seriesId: 101480
-   seriesName: Indian Premier League
+44. VICTORIA SO v WESTERN AUSTRALIA SO
+   eventId: 1778939047
+   seriesId: RX123
+   seriesName: Other
    eventDate: 2026-05-17T10:00:00.000+00:00
-   marketId: 1.258193228
+   marketId: 
    marketName: 
-50. Middlesex v Derbyshire
+45. Middlesex v Derbyshire
    eventId: 35598731
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093220
    marketName: 
-51. Yorkshire v Surrey
+46. Yorkshire v Surrey
    eventId: 35598845
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093266
    marketName: 
-52. Sunrisers Eastern Cape SRL vs. Mi Cape Town SRL
+47. Punjab Kings v RC Bengaluru
+   eventId: 35608629
+   seriesId: 101480
+   seriesName: Indian Premier League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258193228
+   marketName: 
+48. Sunrisers Eastern Cape SRL vs. Mi Cape Town SRL
    eventId: sr:match:71501174
    seriesId: sr:tournament:39175
    seriesName: Simulated Reality League / SA T20 League SRL
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 
    marketName: 
-53. JOE COFFEY v LEXIS KING
+49. JOE COFFEY v LEXIS KING
    eventId: 1778949085
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:10:00.000+00:00
    marketId: 
    marketName: 
-54. FALLON HENLEY v TIFFANY STRATTON
+50. NORTHERN SUPERCHARGERS SO v MANCHESTER ORIGINALS SO
+   eventId: 1778939072
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T10:15:00.000+00:00
+   marketId: 
+   marketName: 
+51. FALLON HENLEY v TIFFANY STRATTON
    eventId: 1778949108
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:30:00.000+00:00
    marketId: 
    marketName: 
-55. SOUTH AFRICA T10 v PAKISTAN T10
+52. KARACHI KINGS SO v ISLAMABAD UNITED SO
+   eventId: 1778939096
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T10:30:00.000+00:00
+   marketId: 
+   marketName: 
+53. SOUTH AFRICA T10 v PAKISTAN T10
    eventId: 1778846354
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:35:00.000+00:00
    marketId: 
    marketName: 
-56. SOUTH AFRICA T10 v INDIA T10
+54. SOUTH AFRICA T10 v INDIA T10
    eventId: 1778845262
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:40:00.000+00:00
    marketId: 
    marketName: 
-57. South Africa SRL vs. Australia SRL
+55. MI CAPE TOWN SO v JOBURG SUPER KINGS SO
+   eventId: 1778939121
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T10:45:00.000+00:00
+   marketId: 
+   marketName: 
+56. South Africa SRL vs. Australia SRL
    eventId: sr:match:71500730
    seriesId: sr:tournament:36807
    seriesName: Simulated Reality League / T20 International SRL
    eventDate: 2026-05-17T11:00:00.000+00:00
    marketId: 
    marketName: 
-58. SCOTT HALL v WES LEE
+57. SCOTT HALL v WES LEE
    eventId: 1778949139
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T11:10:00.000+00:00
+   marketId: 
+   marketName: 
+58. TRINBAGO KNIGHT RIDERS SO v GUYANA AMAZON WARRIORS SO
+   eventId: 1778939172
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T11:15:00.000+00:00
    marketId: 
    marketName: 
 59. Auckland SRL vs. Wellington SRL
@@ -421,19 +421,19 @@ Available events
    eventDate: 2026-05-17T13:00:00.000+00:00
    marketId: 
    marketName: 
-61. Delhi Capitals v Rajasthan Royals
-   eventId: 35598038
-   seriesId: 101480
-   seriesName: Indian Premier League
-   eventDate: 2026-05-17T14:00:00.000+00:00
-   marketId: 1.258088325
-   marketName: 
-62. Karachi Kings SRL vs. Peshawar Zalmi SRL
+61. Karachi Kings SRL vs. Peshawar Zalmi SRL
    eventId: sr:match:71500674
    seriesId: sr:tournament:36805
    seriesName: Simulated Reality League / Pakistan Super League SRL
    eventDate: 2026-05-17T14:00:00.000+00:00
    marketId: 
+   marketName: 
+62. Delhi Capitals v Rajasthan Royals
+   eventId: 35598038
+   seriesId: 101480
+   seriesName: Indian Premier League
+   eventDate: 2026-05-17T14:00:00.000+00:00
+   marketId: 1.258088325
    marketName: 
 63. Guyana Amazon Warriors SRL vs. St Lucia Kings SRL
    eventId: sr:match:71501050

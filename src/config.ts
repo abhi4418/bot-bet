@@ -22,6 +22,9 @@ export type BotConfig = {
   oddsTimeoutMs: number;
   oddsSubscribeMessages: unknown[];
   logWebsocketFrames: boolean;
+  telegramBotToken: string;
+  telegramAllowedChatIds: number[];
+  maxParallelMatches?: number;
 };
 
 const env = typeof Bun !== "undefined" ? Bun.env : process.env;
@@ -53,9 +56,34 @@ export function loadConfig(overrides: Partial<BotConfig> = {}): BotConfig {
     oddsTimeoutMs: readNumber("BETBOT_ODDS_TIMEOUT_MS", 10_000),
     oddsSubscribeMessages: readJsonArray("BETBOT_ODDS_SUBSCRIBE_MESSAGES", []),
     logWebsocketFrames: env.BETBOT_LOG_WS === "true",
+    telegramBotToken: env.TELEGRAM_BOT_TOKEN ?? "",
+    telegramAllowedChatIds: readNumberArray("TELEGRAM_ALLOWED_CHAT_IDS"),
+    maxParallelMatches: readOptionalNumber("MAX_PARALLEL_MATCHES"),
   };
 
   return { ...config, ...overrides };
+}
+
+function readOptionalNumber(name: string): number | undefined {
+  const rawValue = env[name];
+  if (!rawValue) {
+    return undefined;
+  }
+
+  const value = Number(rawValue);
+  return Number.isFinite(value) && value > 0 ? value : undefined;
+}
+
+function readNumberArray(name: string): number[] {
+  const rawValue = env[name];
+  if (!rawValue) {
+    return [];
+  }
+
+  return rawValue
+    .split(",")
+    .map((item) => Number(item.trim()))
+    .filter((value) => Number.isFinite(value));
 }
 
 function readNumber(name: string, fallback: number): number {

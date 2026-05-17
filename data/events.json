@@ -56,17 +56,6 @@
   },
   {
     "sportId": "sr:sport:21",
-    "seriesId": "sr:tournament:51494",
-    "seriesName": "Nepal / T20 Madhesh Cricket League",
-    "eventId": "sr:match:71350206",
-    "eventName": "Parsa vs. Dhanusha",
-    "eventDate": "2026-05-17T03:15:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "sr:sport:21",
     "seriesId": "sr:tournament:39175",
     "seriesName": "Simulated Reality League / SA T20 League SRL",
     "eventId": "sr:match:71501172",
@@ -121,45 +110,12 @@
     "marketType": ""
   },
   {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778846208",
-    "eventName": "AUSTRALIA T10 v SOUTH AFRICA T10",
-    "eventDate": "2026-05-17T05:30:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
     "sportId": "sr:sport:21",
     "seriesId": "sr:tournament:46519",
     "seriesName": "Simulated Reality League / Super Smash SRL",
     "eventId": "sr:match:71500918",
     "eventName": "Wellington SRL vs. Central Districts SRL",
     "eventDate": "2026-05-17T06:00:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778948887",
-    "eventName": "BRONSON REED v REY MYSTERIO",
-    "eventDate": "2026-05-17T06:10:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778938669",
-    "eventName": "DELHI CAPITALS SO v ROYAL CHALLENGERS BANGALORE SO",
-    "eventDate": "2026-05-17T06:15:00.000+00:00",
     "marketId": "",
     "marketName": "",
     "marketType": ""
@@ -182,39 +138,6 @@
     "eventId": "1778845129",
     "eventName": "INDIA T10 v NEW ZEALAND T10",
     "eventDate": "2026-05-17T06:30:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778938699",
-    "eventName": "MELBOURNE RENEGADES SO v ADELAIDE STRIKERS SO",
-    "eventDate": "2026-05-17T06:30:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778948911",
-    "eventName": "STEPHANIE MCMAHON v CHELSEA GREEN",
-    "eventDate": "2026-05-17T06:40:00.000+00:00",
-    "marketId": "",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778938720",
-    "eventName": "SUNRISERS HYDERABAD SO v PUNJAB KINGS SO",
-    "eventDate": "2026-05-17T06:45:00.000+00:00",
     "marketId": "",
     "marketName": "",
     "marketType": ""
@@ -355,8 +278,8 @@
     "sportId": "4",
     "seriesId": "RX123",
     "seriesName": "Other",
-    "eventId": "1778948983",
-    "eventName": "REY FENIX v LA KNIGHT",
+    "eventId": "1778845179",
+    "eventName": "PAKISTAN T10 v SOUTH AFRICA T10",
     "eventDate": "2026-05-17T08:10:00.000+00:00",
     "marketId": "",
     "marketName": "",
@@ -366,8 +289,8 @@
     "sportId": "4",
     "seriesId": "RX123",
     "seriesName": "Other",
-    "eventId": "1778845179",
-    "eventName": "PAKISTAN T10 v SOUTH AFRICA T10",
+    "eventId": "1778948983",
+    "eventName": "REY FENIX v LA KNIGHT",
     "eventDate": "2026-05-17T08:10:00.000+00:00",
     "marketId": "",
     "marketName": "",
@@ -440,22 +363,22 @@
     "marketType": ""
   },
   {
-    "sportId": "sr:sport:21",
-    "seriesId": "sr:tournament:36805",
-    "seriesName": "Simulated Reality League / Pakistan Super League SRL",
-    "eventId": "sr:match:71500672",
-    "eventName": "Quetta Gladiators SRL vs. Lahore Qalandars SRL",
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778845208",
+    "eventName": "WEST INDIES T10 v BANGLADESH T10",
     "eventDate": "2026-05-17T09:00:00.000+00:00",
     "marketId": "",
     "marketName": "",
     "marketType": ""
   },
   {
-    "sportId": "4",
-    "seriesId": "RX123",
-    "seriesName": "Other",
-    "eventId": "1778845208",
-    "eventName": "WEST INDIES T10 v BANGLADESH T10",
+    "sportId": "sr:sport:21",
+    "seriesId": "sr:tournament:36805",
+    "seriesName": "Simulated Reality League / Pakistan Super League SRL",
+    "eventId": "sr:match:71500672",
+    "eventName": "Quetta Gladiators SRL vs. Lahore Qalandars SRL",
     "eventDate": "2026-05-17T09:00:00.000+00:00",
     "marketId": "",
     "marketName": "",
@@ -487,6 +410,17 @@
     "sportId": "4",
     "seriesId": "RX123",
     "seriesName": "Other",
+    "eventId": "1778938998",
+    "eventName": "ISLAMABAD UNITED SO v LAHORE QALANDARS SO",
+    "eventDate": "2026-05-17T09:30:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
     "eventId": "1778846325",
     "eventName": "ENGLAND T10 v INDIA T10",
     "eventDate": "2026-05-17T09:40:00.000+00:00",
@@ -501,6 +435,17 @@
     "eventId": "1778949060",
     "eventName": "GIOVANNI VINCI v JOHN CENA",
     "eventDate": "2026-05-17T09:40:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778939023",
+    "eventName": "GULF GIANTS SO v MI EMIRATES SO",
+    "eventDate": "2026-05-17T09:45:00.000+00:00",
     "marketId": "",
     "marketName": "",
     "marketType": ""
@@ -529,12 +474,12 @@
   },
   {
     "sportId": "4",
-    "seriesId": "101480",
-    "seriesName": "Indian Premier League",
-    "eventId": "35608629",
-    "eventName": "Punjab Kings v RC Bengaluru",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778939047",
+    "eventName": "VICTORIA SO v WESTERN AUSTRALIA SO",
     "eventDate": "2026-05-17T10:00:00.000+00:00",
-    "marketId": "1.258193228",
+    "marketId": "",
     "marketName": "",
     "marketType": ""
   },
@@ -557,6 +502,17 @@
     "eventName": "Yorkshire v Surrey",
     "eventDate": "2026-05-17T10:00:00.000+00:00",
     "marketId": "1.258093266",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "101480",
+    "seriesName": "Indian Premier League",
+    "eventId": "35608629",
+    "eventName": "Punjab Kings v RC Bengaluru",
+    "eventDate": "2026-05-17T10:00:00.000+00:00",
+    "marketId": "1.258193228",
     "marketName": "",
     "marketType": ""
   },
@@ -586,8 +542,30 @@
     "sportId": "4",
     "seriesId": "RX123",
     "seriesName": "Other",
+    "eventId": "1778939072",
+    "eventName": "NORTHERN SUPERCHARGERS SO v MANCHESTER ORIGINALS SO",
+    "eventDate": "2026-05-17T10:15:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
     "eventId": "1778949108",
     "eventName": "FALLON HENLEY v TIFFANY STRATTON",
+    "eventDate": "2026-05-17T10:30:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778939096",
+    "eventName": "KARACHI KINGS SO v ISLAMABAD UNITED SO",
     "eventDate": "2026-05-17T10:30:00.000+00:00",
     "marketId": "",
     "marketName": "",
@@ -616,6 +594,17 @@
     "marketType": ""
   },
   {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778939121",
+    "eventName": "MI CAPE TOWN SO v JOBURG SUPER KINGS SO",
+    "eventDate": "2026-05-17T10:45:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
     "sportId": "sr:sport:21",
     "seriesId": "sr:tournament:36807",
     "seriesName": "Simulated Reality League / T20 International SRL",
@@ -633,6 +622,17 @@
     "eventId": "1778949139",
     "eventName": "SCOTT HALL v WES LEE",
     "eventDate": "2026-05-17T11:10:00.000+00:00",
+    "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "RX123",
+    "seriesName": "Other",
+    "eventId": "1778939172",
+    "eventName": "TRINBAGO KNIGHT RIDERS SO v GUYANA AMAZON WARRIORS SO",
+    "eventDate": "2026-05-17T11:15:00.000+00:00",
     "marketId": "",
     "marketName": "",
     "marketType": ""
@@ -660,17 +660,6 @@
     "marketType": ""
   },
   {
-    "sportId": "4",
-    "seriesId": "101480",
-    "seriesName": "Indian Premier League",
-    "eventId": "35598038",
-    "eventName": "Delhi Capitals v Rajasthan Royals",
-    "eventDate": "2026-05-17T14:00:00.000+00:00",
-    "marketId": "1.258088325",
-    "marketName": "",
-    "marketType": ""
-  },
-  {
     "sportId": "sr:sport:21",
     "seriesId": "sr:tournament:36805",
     "seriesName": "Simulated Reality League / Pakistan Super League SRL",
@@ -678,6 +667,17 @@
     "eventName": "Karachi Kings SRL vs. Peshawar Zalmi SRL",
     "eventDate": "2026-05-17T14:00:00.000+00:00",
     "marketId": "",
+    "marketName": "",
+    "marketType": ""
+  },
+  {
+    "sportId": "4",
+    "seriesId": "101480",
+    "seriesName": "Indian Premier League",
+    "eventId": "35598038",
+    "eventName": "Delhi Capitals v Rajasthan Royals",
+    "eventDate": "2026-05-17T14:00:00.000+00:00",
+    "marketId": "1.258088325",
     "marketName": "",
     "marketType": ""
   },

@@ -1,0 +1,14 @@
+{
+  "message": "API request failed with 401 for POST https://api.uvwin2024.co/api/v1/bs/place-bookmaker-bet",
+  "status": 401,
+  "body": {
+    "timestamp": 1779000835056,
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/api/v1/bs/place-bookmaker-bet"
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://api.uvwin2024.co/api/v1/bs/place-bookmaker-bet"
+  }
+}
