@@ -25,11 +25,8 @@ export class BettingClient {
 
   async getEvents(query: EventQuery = {}): Promise<EventSummary[]> {
     const sportId = query.sportId ?? this.config.defaultSportId;
-    const competitionId = query.competitionId ?? this.config.defaultCompetitionId;
     const providerId = query.providerId ?? this.config.defaultProviderId;
-    const url = `${this.config.catalogBaseUrl}/catalog/v2/sports-feed/sports/${encodeURIComponent(
-      sportId,
-    )}/competitions/${competitionId}/events?providerId=${encodeURIComponent(providerId)}`;
+    const url = `${this.config.catalogBaseUrl}/catalog/v2/sports-feed/sports/live-events?providerId=${encodeURIComponent(providerId)}`;
 
     const response = await this.http.get<unknown>(url);
     return normalizeEventsResponse(response, sportId);

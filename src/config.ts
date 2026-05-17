@@ -14,6 +14,7 @@ export type BotConfig = {
   defaultProviderId: string;
   defaultMarketName: string;
   defaultMarketType: string;
+  defaultStake: number;
   defaultMinStake: number;
   defaultMaxStake: number;
   defaultOddLimit: string;
@@ -22,9 +23,15 @@ export type BotConfig = {
   oddsTimeoutMs: number;
   oddsSubscribeMessages: unknown[];
   logWebsocketFrames: boolean;
+  oddsAdjustment: number;
   telegramBotToken: string;
   telegramAllowedChatIds: number[];
   maxParallelMatches?: number;
+  telegramApiId: number;
+  telegramApiHash: string;
+  telegramSessionString: string;
+  telegramSignalChannel: string;
+  telegramUpdateGroup: string;
 };
 
 const env = typeof Bun !== "undefined" ? Bun.env : process.env;
@@ -48,6 +55,7 @@ export function loadConfig(overrides: Partial<BotConfig> = {}): BotConfig {
     defaultProviderId: env.BETBOT_PROVIDER_ID ?? "BetFair",
     defaultMarketName: env.BETBOT_MARKET_NAME ?? "Match Odds",
     defaultMarketType: env.BETBOT_MARKET_TYPE ?? "MO",
+    defaultStake: readNumber("BETBOT_DEFAULT_STAKE", 500),
     defaultMinStake: readNumber("BETBOT_MIN_STAKE", 100),
     defaultMaxStake: readNumber("BETBOT_MAX_STAKE", 10_000),
     defaultOddLimit: env.BETBOT_ODD_LIMIT ?? "4",
@@ -56,9 +64,15 @@ export function loadConfig(overrides: Partial<BotConfig> = {}): BotConfig {
     oddsTimeoutMs: readNumber("BETBOT_ODDS_TIMEOUT_MS", 10_000),
     oddsSubscribeMessages: readJsonArray("BETBOT_ODDS_SUBSCRIBE_MESSAGES", []),
     logWebsocketFrames: env.BETBOT_LOG_WS === "true",
+    oddsAdjustment: readNumber("BETBOT_ODDS_ADJUSTMENT", 0.05),
     telegramBotToken: env.TELEGRAM_BOT_TOKEN ?? "",
     telegramAllowedChatIds: readNumberArray("TELEGRAM_ALLOWED_CHAT_IDS"),
     maxParallelMatches: readOptionalNumber("MAX_PARALLEL_MATCHES"),
+    telegramApiId: readNumber("TELEGRAM_API_ID", 0),
+    telegramApiHash: env.TELEGRAM_API_HASH ?? "",
+    telegramSessionString: env.TELEGRAM_SESSION_STRING ?? "",
+    telegramSignalChannel: env.TELEGRAM_SIGNAL_CHANNEL ?? "",
+    telegramUpdateGroup: env.TELEGRAM_UPDATE_GROUP ?? "",
   };
 
   return { ...config, ...overrides };

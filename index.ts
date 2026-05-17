@@ -3,6 +3,10 @@ export { loadConfig } from "./src/config.ts";
 export { EventStore } from "./src/eventStore.ts";
 export { SessionManager } from "./src/sessionManager.ts";
 export { TelegramBot } from "./src/telegramBot.ts";
+export { UserTelegramClient } from "./src/userTelegramClient.ts";
+export { BetLedger } from "./src/betLedger.ts";
+export { calculateCashout } from "./src/cashoutEngine.ts";
+export { parseSignal, findMatchingEvent } from "./src/signalParser.ts";
 export type {
   ActiveBet,
   BetSide,
@@ -17,19 +21,16 @@ export type {
 if (import.meta.main) {
   const { createBettingClient } = await import("./src/bettingClient.ts");
   const { loadConfig } = await import("./src/config.ts");
-  const { SessionManager } = await import("./src/sessionManager.ts");
-  const { TelegramBot } = await import("./src/telegramBot.ts");
+  const { UserTelegramClient } = await import("./src/userTelegramClient.ts");
 
   const config = loadConfig();
   const client = createBettingClient(config);
-  const sessions = new SessionManager(client, config.maxParallelMatches);
-  const telegramBot = new TelegramBot(config, client, sessions);
+  const userTg = new UserTelegramClient(config, client);
 
-  process.on("SIGINT", async () => {
-    telegramBot.stop();
-    await sessions.stopAll();
+  process.on("SIGINT", () => {
+    userTg.stop();
     process.exit(0);
   });
 
-  await telegramBot.start();
+  await userTg.start();
 }

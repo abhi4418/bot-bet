@@ -1,486 +1,1207 @@
 Available events
 ================
 
-1.      Indian Premier League
-   eventId: 28127348
-   seriesId: 101480
-   seriesName: Indian Premier League
-   eventDate: 2025-03-31T13:00:00.000+00:00
-   marketId: 1.245690241
-   marketName: 
-2. Multan Sultans SRL vs. Islamabad United SRL
-   eventId: sr:match:71500670
-   seriesId: sr:tournament:36805
-   seriesName: Simulated Reality League / Pakistan Super League SRL
-   eventDate: 2026-05-17T00:00:00.000+00:00
-   marketId: 
-   marketName: 
-3. St Kitts And Nevis Patriots SRL vs. Barbados Royals SRL
-   eventId: sr:match:71501046
-   seriesId: sr:tournament:36803
-   seriesName: Simulated Reality League / Caribbean Premier League SRL
-   eventDate: 2026-05-17T01:00:00.000+00:00
-   marketId: 
-   marketName: 
-4. Perth Scorchers SRL vs. Adelaide Strikers SRL
-   eventId: sr:match:71500846
-   seriesId: sr:tournament:33207
-   seriesName: Simulated Reality League / Big Bash League SRL
-   eventDate: 2026-05-17T02:00:00.000+00:00
-   marketId: 
-   marketName: 
-5. New Zealand SRL vs. West Indies SRL
-   eventId: sr:match:71500726
-   seriesId: sr:tournament:36807
-   seriesName: Simulated Reality League / T20 International SRL
-   eventDate: 2026-05-17T03:00:00.000+00:00
-   marketId: 
-   marketName: 
-6. Paarl Royals SRL vs. Durban Super Giants SRL
-   eventId: sr:match:71501172
-   seriesId: sr:tournament:39175
-   seriesName: Simulated Reality League / SA T20 League SRL
-   eventDate: 2026-05-17T04:00:00.000+00:00
-   marketId: 
-   marketName: 
-7. Bangladesh v Pakistan
+1. Bangladesh v Pakistan
    eventId: 35602104
    seriesId: 11365612
    seriesName: Test Matches
    eventDate: 2026-05-17T04:00:00.000+00:00
    marketId: 1.258129372
    marketName: 
-8. Band-E-Amir Dragons vs. Mis-E-Ainak Knights
+2. Band-E-Amir Dragons vs. Mis-E-Ainak Knights
    eventId: sr:match:71512894
    seriesId: sr:tournament:41274
    seriesName: Afghanistan / Regional List A Tournament
    eventDate: 2026-05-17T04:30:00.000+00:00
    marketId: 
    marketName: 
-9. Delhi vs. Hyderabad
-   eventId: vci:match:21807
-   seriesId: vci:tournament:34172
-   seriesName: Virtual Cricket / Virtual Cricket In-Play
-   eventDate: 2026-05-17T04:50:51.000+00:00
-   marketId: 
-   marketName: 
-10. Trinbago Knight Riders SRL vs. Antigua And Barbuda Falcons SRL
-   eventId: sr:match:71501048
-   seriesId: sr:tournament:36803
-   seriesName: Simulated Reality League / Caribbean Premier League SRL
-   eventDate: 2026-05-17T05:00:00.000+00:00
-   marketId: 
-   marketName: 
-11. Wellington SRL vs. Central Districts SRL
-   eventId: sr:match:71500918
-   seriesId: sr:tournament:46519
-   seriesName: Simulated Reality League / Super Smash SRL
-   eventDate: 2026-05-17T06:00:00.000+00:00
-   marketId: 
-   marketName: 
-12. INDIA T10 v PAKISTAN T10
-   eventId: 1778846232
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:20:00.000+00:00
-   marketId: 
-   marketName: 
-13. INDIA T10 v NEW ZEALAND T10
-   eventId: 1778845129
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T06:30:00.000+00:00
-   marketId: 
-   marketName: 
-14. Sydney Sixers SRL vs. Brisbane Heat SRL
-   eventId: sr:match:71500848
-   seriesId: sr:tournament:33207
-   seriesName: Simulated Reality League / Big Bash League SRL
-   eventDate: 2026-05-17T07:00:00.000+00:00
-   marketId: 
-   marketName: 
-15. CHENNAI SUPER KINGS SO v GUJARAT TITANS SO
-   eventId: 1778938743
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:00:00.000+00:00
-   marketId: 
-   marketName: 
-16. NEW ZEALAND T10 v ENGLAND T10
-   eventId: 1778846254
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:10:00.000+00:00
-   marketId: 
-   marketName: 
-17. CODY RHODES v SHEAMUS
-   eventId: 1778948937
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:10:00.000+00:00
-   marketId: 
-   marketName: 
-18. WASHINGTON FREEDOM SO v MI NEW YORK SO
-   eventId: 1778938767
-   seriesId: RX123
-   seriesName: Other
+3. Siraha vs. Mahottari
+   eventId: sr:match:71350210
+   seriesId: sr:tournament:51494
+   seriesName: Nepal / T20 Madhesh Cricket League
    eventDate: 2026-05-17T07:15:00.000+00:00
    marketId: 
    marketName: 
-19. ENGLAND T10 v AUSTRALIA T10
-   eventId: 1778845155
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:20:00.000+00:00
-   marketId: 
-   marketName: 
-20. JOBURG SUPER KINGS SO v PRETORIA CAPITALS SO
-   eventId: 1778938793
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:30:00.000+00:00
-   marketId: 
-   marketName: 
-21. GOLDBERG v THE ROCK
-   eventId: 1778948959
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:40:00.000+00:00
-   marketId: 
-   marketName: 
-22. ST LUCIA KINGS SO v ST KITTS & NEVIS PATRIOTS SO
-   eventId: 1778938815
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T07:45:00.000+00:00
-   marketId: 
-   marketName: 
-23. WEST INDIES T10 v SOUTH AFRICA T10
-   eventId: 1778846277
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:00:00.000+00:00
-   marketId: 
-   marketName: 
-24. Pakistan SRL vs. Sri Lanka SRL
+4. Pakistan SRL vs. Sri Lanka SRL
    eventId: sr:match:71500728
    seriesId: sr:tournament:36807
    seriesName: Simulated Reality League / T20 International SRL
    eventDate: 2026-05-17T08:00:00.000+00:00
    marketId: 
    marketName: 
-25. KARACHI KINGS SO v QUETTA GLADIATORS SO
-   eventId: 1778938840
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:00:00.000+00:00
-   marketId: 
-   marketName: 
-26. PAKISTAN T10 v SOUTH AFRICA T10
-   eventId: 1778845179
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:10:00.000+00:00
-   marketId: 
-   marketName: 
-27. REY FENIX v LA KNIGHT
-   eventId: 1778948983
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:10:00.000+00:00
-   marketId: 
-   marketName: 
-28. PUNJAB KINGS SO v DELHI CAPITALS SO
-   eventId: 1778938866
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:15:00.000+00:00
-   marketId: 
-   marketName: 
-29. DUBAI CAPITALS SO v GULF GIANTS SO
-   eventId: 1778938894
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:30:00.000+00:00
-   marketId: 
-   marketName: 
-30. AJ LEE v KELANI JORDAN
-   eventId: 1778949006
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:40:00.000+00:00
-   marketId: 
-   marketName: 
-31. DESERT VIPERS SO v SHARJAH WARRIORS SO
-   eventId: 1778938918
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:45:00.000+00:00
-   marketId: 
-   marketName: 
-32. AFGHANISTAN T10 v BANGLADESH T10
-   eventId: 1778846301
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T08:50:00.000+00:00
-   marketId: 
-   marketName: 
-33. SOUTHERN BRAVE SO v OVAL INVINCIBLES SO
-   eventId: 1778938944
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:00:00.000+00:00
-   marketId: 
-   marketName: 
-34. WEST INDIES T10 v BANGLADESH T10
-   eventId: 1778845208
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:00:00.000+00:00
-   marketId: 
-   marketName: 
-35. Quetta Gladiators SRL vs. Lahore Qalandars SRL
+5. Quetta Gladiators SRL vs. Lahore Qalandars SRL
    eventId: sr:match:71500672
    seriesId: sr:tournament:36805
    seriesName: Simulated Reality League / Pakistan Super League SRL
    eventDate: 2026-05-17T09:00:00.000+00:00
    marketId: 
    marketName: 
-36. DREW MCINTYRE v BROCK LESNAR
-   eventId: 1778949033
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:10:00.000+00:00
-   marketId: 
-   marketName: 
-37. MI CAPE TOWN SO v DURBAN'S SUPER GIANTS SO
-   eventId: 1778938973
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:15:00.000+00:00
-   marketId: 
-   marketName: 
-38. ISLAMABAD UNITED SO v LAHORE QALANDARS SO
-   eventId: 1778938998
-   seriesId: RX123
-   seriesName: Other
+6. Ostrava Cc vs. Moravian Cc
+   eventId: sr:match:71523556
+   seriesId: sr:tournament:47179
+   seriesName: Czech Republic / T10 ECS Czechia, Challenger
    eventDate: 2026-05-17T09:30:00.000+00:00
    marketId: 
    marketName: 
-39. ENGLAND T10 v INDIA T10
+7. ENGLAND T10 v INDIA T10
    eventId: 1778846325
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T09:40:00.000+00:00
    marketId: 
    marketName: 
-40. GIOVANNI VINCI v JOHN CENA
-   eventId: 1778949060
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:40:00.000+00:00
-   marketId: 
-   marketName: 
-41. GULF GIANTS SO v MI EMIRATES SO
-   eventId: 1778939023
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:45:00.000+00:00
-   marketId: 
-   marketName: 
-42. TRENT ROCKETS T10 v LONDON SPIRIT T10
-   eventId: 1778845239
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T09:50:00.000+00:00
-   marketId: 
-   marketName: 
-43. Kent v Durham
+8. Kent v Durham
    eventId: 35598636
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093218
    marketName: 
-44. VICTORIA SO v WESTERN AUSTRALIA SO
-   eventId: 1778939047
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T10:00:00.000+00:00
-   marketId: 
-   marketName: 
-45. Middlesex v Derbyshire
+9. Middlesex v Derbyshire
    eventId: 35598731
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093220
    marketName: 
-46. Yorkshire v Surrey
+10. Yorkshire v Surrey
    eventId: 35598845
    seriesId: 11679292
    seriesName: County Championship
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258093266
    marketName: 
-47. Punjab Kings v RC Bengaluru
+11. Punjab Kings v RC Bengaluru
    eventId: 35608629
    seriesId: 101480
    seriesName: Indian Premier League
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 1.258193228
    marketName: 
-48. Sunrisers Eastern Cape SRL vs. Mi Cape Town SRL
+12. Sunrisers Eastern Cape SRL vs. Mi Cape Town SRL
    eventId: sr:match:71501174
    seriesId: sr:tournament:39175
    seriesName: Simulated Reality League / SA T20 League SRL
    eventDate: 2026-05-17T10:00:00.000+00:00
    marketId: 
    marketName: 
-49. JOE COFFEY v LEXIS KING
-   eventId: 1778949085
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T10:10:00.000+00:00
-   marketId: 
-   marketName: 
-50. NORTHERN SUPERCHARGERS SO v MANCHESTER ORIGINALS SO
-   eventId: 1778939072
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T10:15:00.000+00:00
-   marketId: 
-   marketName: 
-51. FALLON HENLEY v TIFFANY STRATTON
+13. FALLON HENLEY v TIFFANY STRATTON
    eventId: 1778949108
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:30:00.000+00:00
    marketId: 
    marketName: 
-52. KARACHI KINGS SO v ISLAMABAD UNITED SO
-   eventId: 1778939096
-   seriesId: RX123
-   seriesName: Other
-   eventDate: 2026-05-17T10:30:00.000+00:00
-   marketId: 
-   marketName: 
-53. SOUTH AFRICA T10 v PAKISTAN T10
+14. SOUTH AFRICA T10 v PAKISTAN T10
    eventId: 1778846354
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:35:00.000+00:00
    marketId: 
    marketName: 
-54. SOUTH AFRICA T10 v INDIA T10
+15. SOUTH AFRICA T10 v INDIA T10
    eventId: 1778845262
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:40:00.000+00:00
    marketId: 
    marketName: 
-55. MI CAPE TOWN SO v JOBURG SUPER KINGS SO
+16. MI CAPE TOWN SO v JOBURG SUPER KINGS SO
    eventId: 1778939121
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T10:45:00.000+00:00
    marketId: 
    marketName: 
-56. South Africa SRL vs. Australia SRL
+17. South Africa SRL vs. Australia SRL
    eventId: sr:match:71500730
    seriesId: sr:tournament:36807
    seriesName: Simulated Reality League / T20 International SRL
    eventDate: 2026-05-17T11:00:00.000+00:00
    marketId: 
    marketName: 
-57. SCOTT HALL v WES LEE
+18. SCOTT HALL v WES LEE
    eventId: 1778949139
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-17T11:10:00.000+00:00
    marketId: 
    marketName: 
-58. TRINBAGO KNIGHT RIDERS SO v GUYANA AMAZON WARRIORS SO
-   eventId: 1778939172
+19. THE ROCK v SOLO SIKOA
+   eventId: 1778949167
    seriesId: RX123
    seriesName: Other
-   eventDate: 2026-05-17T11:15:00.000+00:00
+   eventDate: 2026-05-17T11:40:00.000+00:00
    marketId: 
    marketName: 
-59. Auckland SRL vs. Wellington SRL
-   eventId: sr:match:71500920
-   seriesId: sr:tournament:46519
-   seriesName: Simulated Reality League / Super Smash SRL
-   eventDate: 2026-05-17T12:00:00.000+00:00
+20. AUSTIN THEORY v REY MYSTERIO
+   eventId: 1778949190
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T12:10:00.000+00:00
    marketId: 
    marketName: 
-60. Sydney Thunder SRL vs. Hobart Hurricanes SRL
-   eventId: sr:match:71500850
-   seriesId: sr:tournament:33207
-   seriesName: Simulated Reality League / Big Bash League SRL
-   eventDate: 2026-05-17T13:00:00.000+00:00
+21. RONDA ROUSEY v STEPHANIE VAQUER
+   eventId: 1778949213
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T12:40:00.000+00:00
    marketId: 
    marketName: 
-61. Karachi Kings SRL vs. Peshawar Zalmi SRL
-   eventId: sr:match:71500674
-   seriesId: sr:tournament:36805
-   seriesName: Simulated Reality League / Pakistan Super League SRL
-   eventDate: 2026-05-17T14:00:00.000+00:00
+22. SETH ROLLINS v GOLDBERG
+   eventId: 1778949238
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T13:10:00.000+00:00
    marketId: 
    marketName: 
-62. Delhi Capitals v Rajasthan Royals
+23. BOOGEYMAN v CM PUNK
+   eventId: 1778949263
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-17T13:40:00.000+00:00
+   marketId: 
+   marketName: 
+24. Delhi Capitals v Rajasthan Royals
    eventId: 35598038
    seriesId: 101480
    seriesName: Indian Premier League
    eventDate: 2026-05-17T14:00:00.000+00:00
    marketId: 1.258088325
    marketName: 
-63. Guyana Amazon Warriors SRL vs. St Lucia Kings SRL
-   eventId: sr:match:71501050
-   seriesId: sr:tournament:36803
-   seriesName: Simulated Reality League / Caribbean Premier League SRL
-   eventDate: 2026-05-17T16:00:00.000+00:00
-   marketId: 
-   marketName: 
-64. Joburg Super Kings SRL vs. Pretoria Capitals SRL
-   eventId: sr:match:71501176
-   seriesId: sr:tournament:39175
-   seriesName: Simulated Reality League / SA T20 League SRL
-   eventDate: 2026-05-17T18:00:00.000+00:00
-   marketId: 
-   marketName: 
-65. Central Districts SRL vs. Auckland SRL
-   eventId: sr:match:71500922
-   seriesId: sr:tournament:46519
-   seriesName: Simulated Reality League / Super Smash SRL
-   eventDate: 2026-05-17T20:00:00.000+00:00
-   marketId: 
-   marketName: 
-66. Bangladesh SRL vs. Afghanistan SRL
-   eventId: sr:match:71500732
-   seriesId: sr:tournament:36807
-   seriesName: Simulated Reality League / T20 International SRL
-   eventDate: 2026-05-17T22:00:00.000+00:00
-   marketId: 
-   marketName: 
-67. Melbourne Stars SRL vs. Melbourne Renegades SRL
-   eventId: sr:match:71500852
-   seriesId: sr:tournament:33207
-   seriesName: Simulated Reality League / Big Bash League SRL
-   eventDate: 2026-05-17T23:00:00.000+00:00
-   marketId: 
-   marketName: 
-68. Chennai Super Kings v Sunrisers Hyderabad
+25. Chennai Super Kings v Sunrisers Hyderabad
    eventId: 35612043
    seriesId: 101480
    seriesName: Indian Premier League
    eventDate: 2026-05-18T14:00:00.000+00:00
    marketId: 1.258234836
    marketName: 
-69. CANADIAN GRAND PRIX - RACE
+26. CANADIAN GRAND PRIX - RACE
    eventId: 1778094607
    seriesId: RX123
    seriesName: Other
    eventDate: 2026-05-24T20:00:00.000+00:00
+   marketId: 
+   marketName: 
+27.    ATP Rome 2026
+   eventId: 35566328
+   seriesId: 12800240
+   seriesName: ATP Rome 2026
+   eventDate: 2026-05-11T00:00:00.000+00:00
+   marketId: 1.257774031
+   marketName: 
+28. Gi Tabacco v Callejon Hernando
+   eventId: 35616963
+   seriesId: 12802953
+   seriesName: Ravenna Challenger 2026
+   eventDate: 2026-05-17T08:00:00.000+00:00
+   marketId: 1.258274967
+   marketName: 
+29. Matusevich v Er Kirkin
+   eventId: 35616790
+   seriesId: 12802929
+   seriesName: Sariyer Challenger 2026
+   eventDate: 2026-05-17T08:00:00.000+00:00
+   marketId: 1.258273798
+   marketName: 
+30. Matusevich, Anton vs. Kirkin, Ergi
+   eventId: sr:match:71544982
+   seriesId: sr:tournament:5803
+   seriesName: Challenger / ATP Challenger Istanbul, Turkey Men Singles
+   eventDate: 2026-05-17T08:00:00.000+00:00
+   marketId: 
+   marketName: 
+31. Christie, Freya vs. Baraniakova, Ema
+   eventId: sr:match:71543936
+   seriesId: sr:tournament:51418
+   seriesName: UTR Women / UTR PTT Stirling Women 02
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+32. Poljicak M / Serdarusic N vs. Goldhoff G / Ingildsen J
+   eventId: sr:match:71330624
+   seriesId: sr:tournament:4975
+   seriesName: Challenger / ATP Challenger Zagreb, Croatia Men Doubles
+   eventDate: 2026-05-17T09:15:00.000+00:00
+   marketId: 
+   marketName: 
+33. Giron v M Schoenhaus
+   eventId: 35616100
+   seriesId: 12802727
+   seriesName: ATP Hamburg 2026
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 1.258270176
+   marketName: 
+34. Ri Hijikata v Henri Squire
+   eventId: 35616105
+   seriesId: 12802727
+   seriesName: ATP Hamburg 2026
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 1.258269682
+   marketName: 
+35. Duncan S / Whitehouse M vs. Maric V / Mikrut L
+   eventId: sr:match:71330626
+   seriesId: sr:tournament:4975
+   seriesName: Challenger / ATP Challenger Zagreb, Croatia Men Doubles
+   eventDate: 2026-05-17T09:40:00.000+00:00
+   marketId: 
+   marketName: 
+36. Fedirer vs. Dimetriov
+   eventId: vti:match:29110008
+   seriesId: vti:tournament:23457
+   seriesName: Virtual Tennis In-Play / Virtual Tennis In-Play
+   eventDate: 2026-05-17T09:44:13.000+00:00
+   marketId: 
+   marketName: 
+37. Thimm vs. Raonnec
+   eventId: vti:match:29110009
+   seriesId: vti:tournament:23457
+   seriesName: Virtual Tennis In-Play / Virtual Tennis In-Play
+   eventDate: 2026-05-17T09:46:09.000+00:00
+   marketId: 
+   marketName: 
+38. Abh Shanmugam v Javia
+   eventId: 35616287
+   seriesId: 12802897
+   seriesName: Bengaluru Challenger 2026
+   eventDate: 2026-05-17T09:50:00.000+00:00
+   marketId: 1.258271334
+   marketName: 
+39. Shanmugam, Abhinav Sanjeev vs. Javia, Dev
+   eventId: sr:match:71544438
+   seriesId: sr:tournament:50752
+   seriesName: Challenger / ATP Challenger Bengaluru 3, India Men Singles
+   eventDate: 2026-05-17T09:50:00.000+00:00
+   marketId: 
+   marketName: 
+40. Saraiva Dos Santos v Avcibasi
+   eventId: 35617047
+   seriesId: 12802929
+   seriesName: Sariyer Challenger 2026
+   eventDate: 2026-05-17T09:55:00.000+00:00
+   marketId: 1.258277257
+   marketName: 
+41. Gofein vs. Andorsen
+   eventId: vti:match:29110011
+   seriesId: vti:tournament:23457
+   seriesName: Virtual Tennis In-Play / Virtual Tennis In-Play
+   eventDate: 2026-05-17T09:56:45.000+00:00
+   marketId: 
+   marketName: 
+42. Bass F / Genov A vs. Bianchi J J / Sheehy J
+   eventId: sr:match:71330622
+   seriesId: sr:tournament:4975
+   seriesName: Challenger / ATP Challenger Zagreb, Croatia Men Doubles
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+43. Ig Buse v Hug Gaston
+   eventId: 35616419
+   seriesId: 12802727
+   seriesName: ATP Hamburg 2026
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258271604
+   marketName: 
+44. Yamanaka, Taiyo vs. Kalyanpur, Adil
+   eventId: sr:match:71544444
+   seriesId: sr:tournament:50752
+   seriesName: Challenger / ATP Challenger Bengaluru 3, India Men Singles
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+45. Max Rehberg v Comesana
+   eventId: 35616895
+   seriesId: 12802749
+   seriesName: ATP Geneva 2026
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258274182
+   marketName: 
+46. Yamanaka v A Kalyanpur
+   eventId: 35617130
+   seriesId: 12802897
+   seriesName: Bengaluru Challenger 2026
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258277958
+   marketName: 
+47. Pyo Nesterov v P Basile
+   eventId: 35617230
+   seriesId: 12802953
+   seriesName: Ravenna Challenger 2026
+   eventDate: 2026-05-17T10:05:00.000+00:00
+   marketId: 1.258279074
+   marketName: 
+48. Nadel vs. Queray
+   eventId: vti:match:29110012
+   seriesId: vti:tournament:23457
+   seriesName: Virtual Tennis In-Play / Virtual Tennis In-Play
+   eventDate: 2026-05-17T10:07:29.000+00:00
+   marketId: 
+   marketName: 
+49. Lumsden, Ewen vs. McKay, Kyle
+   eventId: sr:match:71544434
+   seriesId: sr:tournament:51412
+   seriesName: UTR Men / UTR PTT Stirling Men 02
+   eventDate: 2026-05-17T10:10:00.000+00:00
+   marketId: 
+   marketName: 
+50. Zakharova v D Kasatkina
+   eventId: 35616322
+   seriesId: 12802657
+   seriesName: WTA Strasbourg 2026
+   eventDate: 2026-05-17T10:15:00.000+00:00
+   marketId: 1.258271506
+   marketName: 
+51. Bagnolini v Sorger
+   eventId: 35616973
+   seriesId: 12802953
+   seriesName: Ravenna Challenger 2026
+   eventDate: 2026-05-17T10:25:00.000+00:00
+   marketId: 1.258274926
+   marketName: 
+52. Kosaner v Pokorny
+   eventId: 35617042
+   seriesId: 12802929
+   seriesName: Sariyer Challenger 2026
+   eventDate: 2026-05-17T10:30:00.000+00:00
+   marketId: 1.258277256
+   marketName: 
+53. M Sakkari v Pe Stearns
+   eventId: 35615759
+   seriesId: 12802657
+   seriesName: WTA Strasbourg 2026
+   eventDate: 2026-05-17T10:35:00.000+00:00
+   marketId: 1.258264254
+   marketName: 
+54. Arjun Mehrotra v Lomakin
+   eventId: 35616297
+   seriesId: 12802897
+   seriesName: Bengaluru Challenger 2026
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 1.258271363
+   marketName: 
+55. Ma Joint v A Li
+   eventId: 35615791
+   seriesId: 12802657
+   seriesName: WTA Strasbourg 2026
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 1.258265145
+   marketName: 
+56. T Compagnucci v A Balestrieri
+   eventId: 35616978
+   seriesId: 12802953
+   seriesName: Ravenna Challenger 2026
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 1.258275004
+   marketName: 
+57. Ayeni, Alafia vs. Lopez Morillo, Imanol
+   eventId: sr:match:71544990
+   seriesId: sr:tournament:5803
+   seriesName: Challenger / ATP Challenger Istanbul, Turkey Men Singles
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+58. Sinner v Ruud
+   eventId: 35616159
+   seriesId: 12800240
+   seriesName: ATP Rome 2026
+   eventDate: 2026-05-17T15:00:00.000+00:00
+   marketId: 1.258270632
+   marketName: 
+59. Kyrgyzstan vs. Afghanistan
+   eventId: sr:match:71465130
+   seriesId: sr:tournament:855
+   seriesName: International Youth / U20 Friendly Games
+   eventDate: 2026-05-17T07:30:00.000+00:00
+   marketId: 
+   marketName: 
+60. Bali United vs. Bhayangkara Presisi Indonesia FC
+   eventId: sr:match:62083182
+   seriesId: sr:tournament:1015
+   seriesName: Indonesia / Super League
+   eventDate: 2026-05-17T08:30:00.000+00:00
+   marketId: 
+   marketName: 
+61. Ferencvarosi TC II vs. Pecsi MFC
+   eventId: sr:match:62181558
+   seriesId: sr:tournament:47952
+   seriesName: NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+62. Newcastle United SRL vs. West Ham United SRL
+   eventId: sr:match:71411116
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+63. Atletic Club d'Escaldes vs. FC Penya d`Andorra
+   eventId: sr:match:61737726
+   seriesId: sr:tournament:742
+   seriesName: Andorra / Primera Divisio
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+64. FC Vorskla Poltava vs. FC Metalist Kharkiv
+   eventId: sr:match:61840780
+   seriesId: sr:tournament:691
+   seriesName: Ukraine / Persha Liga
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+65. KFC Komarno B vs. FC Zolik Malacky
+   eventId: sr:match:61940268
+   seriesId: sr:tournament:47536
+   seriesName: Slovakia / 3. Liga
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+66. Kisvarda FC II vs. Cigand SE
+   eventId: sr:match:62160252
+   seriesId: sr:tournament:47952
+   seriesName: Hungary / NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+67. Debreceni VSC II vs. Tiszaujvaros
+   eventId: sr:match:62160254
+   seriesId: sr:tournament:47952
+   seriesName: Hungary / NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+68. Puskas Akademia FC II vs. Bicskei Tc
+   eventId: sr:match:62161250
+   seriesId: sr:tournament:47952
+   seriesName: Hungary / NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+69. Ujpest FC II vs. Papai Perutz FC
+   eventId: sr:match:62161254
+   seriesId: sr:tournament:47952
+   seriesName: Hungary / NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+70. MTK Budapest II vs. Dunaujvaros Palhalma Agrospecial SE
+   eventId: sr:match:62181556
+   seriesId: sr:tournament:47952
+   seriesName: Hungary / NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+71. FC Ryukyu v Tottori
+   eventId: 35615411
+   seriesId: 12782313
+   seriesName: Japanese J. League 2/3 100 Year Vision
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 1.258260921
+   marketName: 
+72. Paksi FC II vs. Majosi SE
+   eventId: sr:match:62181566
+   seriesId: sr:tournament:47952
+   seriesName: NB III
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+73. Cagliari Calcio vs. SSC Napoli
+   eventId: sr:match:61537656
+   seriesId: sr:tournament:2340
+   seriesName: Italy / Primavera 1
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+74. FC Ryukyu vs. Gainare Tottori
+   eventId: sr:match:67648468
+   seriesId: sr:tournament:402
+   seriesName: Japan / J2/J3 League
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+75. NK Osijek vs. HNK Rijeka
+   eventId: sr:match:62415644
+   seriesId: sr:tournament:48060
+   seriesName: Croatia / U19 Prva NL Juniori
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+76. Shaanxi Chang An Athletic FC vs. Shandong Ticai
+   eventId: sr:match:71000984
+   seriesId: sr:tournament:19264
+   seriesName: China / Chinese Super League, Women
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+77. Manchester United FC SRL vs. Nottingham Forest Srl
+   eventId: sr:match:71411104
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+78. Brentford FC vs. Crystal Palace SRL
+   eventId: sr:match:71411106
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+79. Everton FC SRL vs. Sunderland AFC Srl
+   eventId: sr:match:71411110
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+80. Leeds United SRL vs. Brighton & Hove Albion SRL
+   eventId: sr:match:71411112
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+81. Wolverhampton Wanderers SRL vs. Fulham FC
+   eventId: sr:match:71411114
+   seriesId: sr:tournament:32215
+   seriesName: Simulated Reality League / Premier League SRL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+82. Trabzonspor vs. Genclerbirligi Ankara
+   eventId: sr:match:63039311
+   seriesId: sr:tournament:29912
+   seriesName: Turkiye Amateur / U19 PAF Ligi
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+83. SC Paderborn 07 vs. 1. FC Cologne
+   eventId: sr:match:71457340
+   seriesId: sr:tournament:24702
+   seriesName: Germany Amateur / U19 DFB Nachwuchsliga
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+84. SK Sturm Graz vs. FK Austria Wien
+   eventId: sr:match:70633072
+   seriesId: sr:tournament:14197
+   seriesName: Austria Amateur / Bundesliga, Women
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 
+   marketName: 
+85. CD Manchego Ciudad Real vs. CD Tarancon
+   eventId: sr:match:71483872
+   seriesId: sr:tournament:26052
+   seriesName: Spain Amateur / Tercera Federacion, Group 18
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 
+   marketName: 
+86. OGC Nice SRL vs. FC Metz SRL
+   eventId: sr:match:71411128
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+87. Atletico Albacete vs. CD Toledo Sad
+   eventId: sr:match:71483876
+   seriesId: sr:tournament:26052
+   seriesName: Spain Amateur / Tercera Federacion, Group 18
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+88. Gangwon v Ulsan Hyundai Horang-i
+   eventId: 35604582
+   seriesId: 12395639
+   seriesName: South Korean K1 League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258157607
+   marketName: 
+89. Bucheon FC 1995 v Pohang Steelers
+   eventId: 35604590
+   seriesId: 12395639
+   seriesName: South Korean K1 League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258157387
+   marketName: 
+90. Como v Parma
+   eventId: 35568225
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.257734539
+   marketName: 
+91. Roma v Lazio
+   eventId: 35568193
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.257735449
+   marketName: 
+92. Pisa v Napoli
+   eventId: 35568175
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.257736221
+   marketName: 
+93. IF Gnistan vs. Tampereen Ilves
+   eventId: sr:match:67845752
+   seriesId: sr:tournament:1662
+   seriesName: Finland / Kansallinen Liiga, Women
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+94. Chungnam Asan FC vs. Suwon FC
+   eventId: sr:match:68046804
+   seriesId: sr:tournament:777
+   seriesName: Republic of Korea / K-League 2
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+95. UD Poblense vs. CD Numancia
+   eventId: sr:match:71300076
+   seriesId: sr:tournament:544
+   seriesName: Spain / Segunda Federacion
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+96. Chungnam Asan v Suwon FC
+   eventId: 35602101
+   seriesId: 12395641
+   seriesName: South Korean K2 League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258134677
+   marketName: 
+97. Rukh Vynnyky v Oleksandria
+   eventId: 35604228
+   seriesId: 139
+   seriesName: Ukrainian Premier League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258152831
+   marketName: 
+98. Genoa v AC Milan
+   eventId: 35568191
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.257735973
+   marketName: 
+99. FC Lorient Srl vs. Le Havre AC Srl
+   eventId: sr:match:71411122
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+100. FC Nantes SRL vs. Toulouse FC SRL
+   eventId: sr:match:71411124
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+101. Lille OSC SRL vs. AJ Auxerre Srl
+   eventId: sr:match:71411126
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+102. Stade Brestois 29 SRL vs. Angers SCO SRL
+   eventId: sr:match:71411130
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+103. FC Paris Srl vs. Paris Saint-Germain SRL
+   eventId: sr:match:71411132
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+104. Olympique Marseille SRL vs. Stade Rennais FC SRL
+   eventId: sr:match:71411134
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+105. Strasbourg Alsace SRL vs. AS Monaco SRL
+   eventId: sr:match:71411136
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+106. Olympique Lyon SRL vs. RC Lens Srl
+   eventId: sr:match:71411138
+   seriesId: sr:tournament:32223
+   seriesName: Simulated Reality League / Ligue 1 SRL
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+107. Oliveirense v Felgueiras
+   eventId: 35594537
+   seriesId: 9513
+   seriesName: Portuguese Segunda Liga
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258030585
+   marketName: 
+108. Juventus v Fiorentina
+   eventId: 35568180
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.257736097
+   marketName: 
+109. Kawasaki v FC Machida
+   eventId: 35597337
+   seriesId: 12782082
+   seriesName: Japanese J. League 100 Year Vision
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258085149
+   marketName: 
+110. Hoang Anh Gia Lai v Hong Linh Ha Tinh
+   eventId: 35615601
+   seriesId: 12209059
+   seriesName: Vietnamese V-League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 1.258262144
+   marketName: 
+111. Piast Gliwice v Rakow Czestochowa
+   eventId: 35601606
+   seriesId: 97
+   seriesName: Polish Ekstraklasa
+   eventDate: 2026-05-17T10:15:00.000+00:00
+   marketId: 1.258124443
+   marketName: 
+112. Sandecja Nowy Sacz v Olimpia Grudziadz
+   eventId: 35601614
+   seriesId: 11838780
+   seriesName: Polish 2 Liga
+   eventDate: 2026-05-17T10:15:00.000+00:00
+   marketId: 1.258126166
+   marketName: 
+113. Lunds BK vs. Utsiktens BK
+   eventId: sr:match:68311598
+   seriesId: sr:tournament:27412
+   seriesName: Sweden / Ettan
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+114. Boeung Ket Angkor FC vs. MOI Kompong Dewa FC
+   eventId: sr:match:69221032
+   seriesId: sr:tournament:19250
+   seriesName: Cambodia / Cambodian Premier League
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+115. Quy Nhon Binh Dinh vs. Quang Ninh FC
+   eventId: sr:match:68664054
+   seriesId: sr:tournament:771
+   seriesName: Vietnam / V-League 2
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+116. Tampereen Ilves 2 vs. P-Iirot
+   eventId: sr:match:69108820
+   seriesId: sr:tournament:26910
+   seriesName: Finland / Kakkonen
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+117. Nam Dinh FC vs. The Cong - Viettel FC
+   eventId: sr:match:68663480
+   seriesId: sr:tournament:626
+   seriesName: Vietnam / V-League 1
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+118. Preah Khan Reach Svay Rieng FC vs. Phnom Penh Crown FC
+   eventId: sr:match:69221028
+   seriesId: sr:tournament:19250
+   seriesName: Cambodia / Cambodian Premier League
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+119. FC Kyzylzhar SK vs. FC Altai Oskemen
+   eventId: sr:match:69342850
+   seriesId: sr:tournament:682
+   seriesName: Kazakhstan / Premier League
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+120. FC Viktoria Plzen vs. Lokomotiva Brno Horni Herspice
+   eventId: sr:match:70224130
+   seriesId: sr:tournament:823
+   seriesName: Czechia / 1. Liga, Women
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+121. Kdv Tomsk vs. Rubin-2 Kazan
+   eventId: sr:match:70252094
+   seriesId: sr:tournament:1097
+   seriesName: Russia / 2. Liga, Division B, Group 4
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+122. Berliner AK 07 vs. SG Union Klosterfelde
+   eventId: sr:match:61705392
+   seriesId: sr:tournament:145
+   seriesName: Germany Amateur / Oberliga NOFV North
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+123. BK Astrio vs. Galtabacks BK
+   eventId: sr:match:68377670
+   seriesId: sr:tournament:20782
+   seriesName: Sweden / Division 2
+   eventDate: 2026-05-17T11:00:00.000+00:00
+   marketId: 
+   marketName: 
+124. Man Utd v Nottm Forest
+   eventId: 35568234
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T11:30:00.000+00:00
+   marketId: 1.257737008
+   marketName: 
+125. Inter v Verona
+   eventId: 35568212
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T13:00:00.000+00:00
+   marketId: 1.257734801
+   marketName: 
+126. Everton v Sunderland
+   eventId: 35568246
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T14:00:00.000+00:00
+   marketId: 1.257737830
+   marketName: 
+127. Wolves v Fulham
+   eventId: 35568241
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T14:00:00.000+00:00
+   marketId: 1.257738051
+   marketName: 
+128. Leeds v Brighton
+   eventId: 35568247
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T14:00:00.000+00:00
+   marketId: 1.257737720
+   marketName: 
+129. Brentford v Crystal Palace
+   eventId: 35568245
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T14:00:00.000+00:00
+   marketId: 1.257737941
+   marketName: 
+130. Atalanta v Bologna
+   eventId: 35568192
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T16:00:00.000+00:00
+   marketId: 1.257735711
+   marketName: 
+131. Newcastle v West Ham
+   eventId: 35568243
+   seriesId: 10932509
+   seriesName: English Premier League
+   eventDate: 2026-05-17T16:30:00.000+00:00
+   marketId: 1.257738161
+   marketName: 
+132. Rayo Vallecano v Villarreal
+   eventId: 35568348
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257740167
+   marketName: 
+133. Athletic Bilbao v Celta Vigo
+   eventId: 35568316
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257741179
+   marketName: 
+134. Sevilla v Real Madrid
+   eventId: 35568333
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257740920
+   marketName: 
+135. Elche v Getafe
+   eventId: 35568349
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257740029
+   marketName: 
+136. Oviedo v Alaves
+   eventId: 35568350
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257739891
+   marketName: 
+137. Real Sociedad v Valencia
+   eventId: 35568339
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257740534
+   marketName: 
+138. Osasuna v Espanyol
+   eventId: 35568351
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257739643
+   marketName: 
+139. Atletico Madrid v Girona
+   eventId: 35568357
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257738931
+   marketName: 
+140. Levante v Mallorca
+   eventId: 35568335
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T17:00:00.000+00:00
+   marketId: 1.257740782
+   marketName: 
+141. Udinese v US Cremonese
+   eventId: 35568172
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T18:45:00.000+00:00
+   marketId: 1.257736345
+   marketName: 
+142. Sassuolo v Lecce
+   eventId: 35568199
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T18:45:00.000+00:00
+   marketId: 1.257735187
+   marketName: 
+143. Cagliari v Torino
+   eventId: 35568209
+   seriesId: 81
+   seriesName: Italian Serie A
+   eventDate: 2026-05-17T18:45:00.000+00:00
+   marketId: 1.257734925
+   marketName: 
+144. Barcelona v Betis
+   eventId: 35568352
+   seriesId: 117
+   seriesName: Spanish La Liga
+   eventDate: 2026-05-17T19:15:00.000+00:00
+   marketId: 1.257739069
+   marketName: 
+145. UEFA EUROPA LEAGUE - WINNER 2025/26
+   eventId: 1774999383
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-20T19:00:00.000+00:00
+   marketId: 
+   marketName: 
+146. UEFA CONFERENCE LEAGUE - WINNER 2025/26
+   eventId: 1775001617
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-27T19:00:00.000+00:00
+   marketId: 
+   marketName: 
+147. UEFA CHAMPIONS LEAGUE - WINNER 2025/26
+   eventId: 1772092710
+   seriesId: RX123
+   seriesName: Other
+   eventDate: 2026-05-31T03:00:00.000+00:00
+   marketId: 
+   marketName: 
+148. New Taipei Kings vs. Taoyuan Taiwan Beer Leopards
+   eventId: sr:match:71489064
+   seriesId: sr:tournament:44675
+   seriesName: Chinese Taipei / TPBL
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+149. Taoyuan Pauian Pilots vs. Yankey Engineering
+   eventId: sr:match:64071049
+   seriesId: sr:tournament:35817
+   seriesName: Chinese Taipei / P League
+   eventDate: 2026-05-17T09:00:00.000+00:00
+   marketId: 
+   marketName: 
+150. BC Novosibirsk vs. BK Dynamo Grozny
+   eventId: sr:match:71409762
+   seriesId: sr:tournament:33321
+   seriesName: Russia / Super League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+151. Zenit Saint Petersburg vs. BC Uniks Kazan
+   eventId: sr:match:71295468
+   seriesId: sr:tournament:1438
+   seriesName: International / United League
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+152. Albacete Basket vs. Iraurgi Saski Baloia
+   eventId: sr:match:71280686
+   seriesId: sr:tournament:44949
+   seriesName: Spain / Segunda FEB
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+153. AB Castello vs. CEB Lliria
+   eventId: sr:match:71280676
+   seriesId: sr:tournament:44949
+   seriesName: Spain / Segunda FEB
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+154. Caprabo Lleida vs. CB Gran Canaria
+   eventId: sr:match:63049387
+   seriesId: sr:tournament:264
+   seriesName: Spain / Liga ACB
+   eventDate: 2026-05-17T10:00:00.000+00:00
+   marketId: 
+   marketName: 
+155. UCAM Murcia vs. CB Malaga
+   eventId: sr:match:63049397
+   seriesId: sr:tournament:264
+   seriesName: Spain / Liga ACB
+   eventDate: 2026-05-17T10:30:00.000+00:00
+   marketId: 
+   marketName: 
+156. Real Madrid vs. Club Joventut Badalona
+   eventId: sr:match:63049393
+   seriesId: sr:tournament:264
+   seriesName: Spain / Liga ACB
+   eventDate: 2026-05-17T10:30:00.000+00:00
+   marketId: 
+   marketName: 
+157. Uni Lions vs. CTBC Brothers
+   eventId: sr:match:69461904
+   seriesId: sr:tournament:32233
+   seriesName: Chinese Taipei / CPBL
+   eventDate: 2026-05-17T08:05:00.000+00:00
+   marketId: 
+   marketName: 
+158. Shao, Jieni vs. Rad, Elvira Fiona
+   eventId: sr:match:71545898
+   seriesId: sr:tournament:51436
+   seriesName: WTT Feeder Lagos 2026, WS
+   eventDate: 2026-05-17T10:10:00.000+00:00
+   marketId: 
+   marketName: 
+159. Nemec, Michal vs. Zeman, Radek
+   eventId: sr:match:71545590
+   seriesId: sr:tournament:32129
+   seriesName: International / TT Cup
+   eventDate: 2026-05-17T10:20:00.000+00:00
+   marketId: 
+   marketName: 
+160. Cheng, Hsien-Tzu vs. Peng, Yu-Han
+   eventId: sr:match:71545918
+   seriesId: sr:tournament:51436
+   seriesName: International / WTT Feeder Lagos 2026, WS
+   eventDate: 2026-05-17T10:25:00.000+00:00
+   marketId: 
+   marketName: 
+161. Darin, Kyryl vs. Malek, Lukas
+   eventId: sr:match:71541422
+   seriesId: sr:tournament:36349
+   seriesName: Czech Republic / Czech Liga Pro
+   eventDate: 2026-05-17T10:30:00.000+00:00
+   marketId: 
+   marketName: 
+162. Duch, Adam vs. Kos, Pawel
+   eventId: sr:match:71546638
+   seriesId: sr:tournament:32129
+   seriesName: International / TT Cup
+   eventDate: 2026-05-17T10:35:00.000+00:00
+   marketId: 
+   marketName: 
+163. Rek, Lukas Dominik vs. Vodal, Petr
+   eventId: sr:match:71556228
+   seriesId: sr:tournament:32129
+   seriesName: International / TT Cup
+   eventDate: 2026-05-17T10:35:00.000+00:00
+   marketId: 
+   marketName: 
+164. Chen, Min-Hsin vs. Zarif, Audrey
+   eventId: sr:match:71545896
+   seriesId: sr:tournament:51436
+   seriesName: WTT Feeder Lagos 2026, WS
+   eventDate: 2026-05-17T10:35:00.000+00:00
+   marketId: 
+   marketName: 
+165. Staniszewski, Piotr vs. Szoltysek, Artur
+   eventId: sr:match:71542316
+   seriesId: sr:tournament:36377
+   seriesName: International / TT Elite Series
+   eventDate: 2026-05-17T10:35:00.000+00:00
+   marketId: 
+   marketName: 
+166. Sulkowski, Karol vs. Woskowicz, Mateusz
+   eventId: sr:match:71542318
+   seriesId: sr:tournament:36377
+   seriesName: International / TT Elite Series
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 
+   marketName: 
+167. Przewlocki, Piotr vs. Kurek, Pawel
+   eventId: sr:match:71542320
+   seriesId: sr:tournament:36377
+   seriesName: International / TT Elite Series
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 
+   marketName: 
+168. Pribyl, Jan vs. Benes, Radek
+   eventId: sr:match:71545594
+   seriesId: sr:tournament:32129
+   seriesName: International / TT Cup
+   eventDate: 2026-05-17T10:40:00.000+00:00
+   marketId: 
+   marketName: 
+169. Braun, Josef vs. Jadczyk, Marcin
+   eventId: sr:match:71542322
+   seriesId: sr:tournament:36377
+   seriesName: International / TT Elite Series
+   eventDate: 2026-05-17T10:45:00.000+00:00
+   marketId: 
+   marketName: 
+170. Kolbusovsky, Michal vs. Rolik, Jakub
+   eventId: sr:match:71545596
+   seriesId: sr:tournament:32129
+   seriesName: International / TT Cup
+   eventDate: 2026-05-17T10:50:00.000+00:00
+   marketId: 
+   marketName: 
+171. Lions-Pro vs. Enerdzhi
+   eventId: sr:match:71544430
+   seriesId: sr:tournament:32175
+   seriesName: Russia / Pro League
+   eventDate: 2026-05-17T09:30:00.000+00:00
+   marketId: 
+   marketName: 
+172. Molot vs. Vityaz
+   eventId: sr:match:71544432
+   seriesId: sr:tournament:32175
+   seriesName: Russia / Pro League
+   eventDate: 2026-05-17T11:00:00.000+00:00
    marketId: 
    marketName: 
